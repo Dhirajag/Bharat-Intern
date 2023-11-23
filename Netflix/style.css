@@ -1,0 +1,269 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(background.jpeg);
+    background-size: cover;
+    background-position: center;
+
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 120px;
+    cursor: pointer;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 8px 12px;
+    position: relative;
+
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0%;
+    background: red;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    color:white;
+}
+.content h1{
+    font-size: 62px;
+    margin-top: 80px;
+
+}
+button{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin:20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border: 2px solid red;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+span{
+    background: red;
+    height: 100%;
+    width: 0;
+    border-radius: 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    /* transition: 0.5s;  */
+}
+
+
+
+button:hover span{
+    width: 100%;
+    transition: 0.5s;
+
+
+}
+
+/* button:hover{
+    border: none;
+} */
+/*@media(max-width:700px){
+    .content h1{ 
+        font-size: 30px;
+        margin-top: 60px;
+    }
+    .navbar ul li{
+        display: block;
+    }
+    .navbar{
+        position:absolute;
+        background: #009688;
+        height:100vh;
+        width: 200vh;
+        top: 0;
+        right: 0;
+        text-align: left;
+        z-index: 2;
+
+
+    }
+} */
+
+
+
+
+/*first*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'poppins',sans-serif;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden ;
+}
+body{
+    color:var(--primary-color);
+   background-color: black;
+   
+}
+section{
+    scroll-behavior: smooth;
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+.about{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(about.jpg);
+    background-size: cover;
+    background-position: center;  
+    color:white;
+
+}
+.about-img img {
+    width: 35vw;
+    height: auto;
+    /* border-radius: 50%; */
+    animation: floatImage 4s ease-in-out infinite;
+}
+
+.about-content h3{
+    font-size: 3.2rem;
+    font-weight: 700;
+
+}
+.about-content h3:nth-of-type(2){
+    margin-bottom: 2rem;
+}
+span{
+    color: var(--main-color);
+}
+.about-content h1{
+    font-size: 5.6rem;
+    font-weight: 700;
+    line-height: 1.3;
+}
+.about-content p{
+    font-size: 2.3rem ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-style: italic;
+}
+.default{
+    width: 100%;
+    height: 0.5rem;
+    position: absolute;
+    bottom: -0.5rem;
+    background-color: red;
+}
+
+
+
+
+
+
+
+#body{
+    text-align: center;
+    background-color: white;
+    
+    
+}
+#services{
+    padding: 50px 0;
+}
+.services-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+.services-list div {
+    
+    padding: 50px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.services-list div i{
+    font-size: 50px;
+    margin-bottom: 50px;
+}
+
+.services-list div a{
+    text-decoration: none;
+    color: whitesmoke;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+    transition:  background 0.5s, transform 0.5s;
+}
+.services-list a:hover{
+    
+    transform: translateY(-0px);
+}
+.sub-title{
+    font-size: 25px;
+    font-weight: 600;
+    color: whitesmoke;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright i1{
+    color: darkred;
+}
